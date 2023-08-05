@@ -9,6 +9,19 @@ var quizzes = null;
 
 // When the document is loaded...
 $(function() {
+    if(localStorage.getItem('bg_ran') == null){
+      var bg_ran = Math.floor(Math.random() * 3);
+      localStorage.setItem('bg_ran', bg_ran);
+    }
+    if(localStorage.getItem('bg_ran') == 0) {
+      $(".background").css("background-image","url('resources/img/background_r.jpg')");
+    }
+    else if(localStorage.getItem('bg_ran') == 1){
+        $(".background").css("background-image","url('resources/img/background_y.jpg')");
+    }
+    else if(localStorage.getItem('bg_ran') == 2){
+        $(".background").css("background-image","url('resources/img/background_b.jpg')");
+    }
 
     // Things
     $("#randomTitle").draggable({
@@ -77,6 +90,15 @@ $(function() {
         if(quiz_num <= size) {
           // alert("제목 가져오는 중...");
           $("#randomTitle").text(quizzes[quiz_num-1].title);
+        }
+        if(bg_ran == 0) {
+          $(".background").css("background-image","url('resources/img/background_r.jpg')");
+        }
+        else if(bg_ran == 1){
+            $(".background").css("background-image","url('resources/img/background_y.jpg')");
+        }
+        else if(bg_ran == 2){
+            $(".background").css("background-image","url('resources/img/background_b.jpg')");
         }
     };
 
