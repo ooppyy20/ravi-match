@@ -4,8 +4,7 @@
 // Global Variables
 var size = 0;
 var quiz_num = 0;
-let goto_result = false;
-let quizzes = null;
+var quizzes = null;
 
 
 // When the document is loaded...

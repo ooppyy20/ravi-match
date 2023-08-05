@@ -4,12 +4,25 @@
 // Global Variables
 var size = 0;
 var quiz_num = 0;
-let goto_result = false;
-let quizzes = null;
+var quizzes = null;
 
 
 // When the document is loaded...
 $(function() {
+
+    if(localStorage.getItem('bg_ran') == null){
+        var bg_ran = Math.floor(Math.random() * 3);
+        if(bg_ran == 0) {
+            $(".background").css("background-image","url('resources/img/background_r.jpg')");
+        }
+        else if(bg_ran == 1){
+            $(".background").css("background-image","url('resources/img/background_y.jpg')");
+        }
+        else if(bg_ran == 2){
+            $(".background").css("background-image","url('resources/img/background_b.jpg')");
+        }
+        localStorage.setItem('bg_ran', bg_ran);
+    }
 
     // Things
     $("#randomTitle").draggable({
