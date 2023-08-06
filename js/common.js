@@ -9,10 +9,13 @@ var quizzes = null;
 
 // When the document is loaded...
 $(function() {
+
+  // Background image load
     if(localStorage.getItem('bg_ran') == null){
       var bg_ran = Math.floor(Math.random() * 3);
       localStorage.setItem('bg_ran', bg_ran);
     }
+    
     if(localStorage.getItem('bg_ran') == 0) {
       $(".background").css("background-image","url('resources/img/background_r.jpg')");
     }
@@ -25,7 +28,7 @@ $(function() {
 
     // Things
     $("#randomTitle").draggable({
-      containment: ".content",
+      // containment: "#body",
       scroll : false,
       cursor: "move",
       revert: "invalid",
@@ -40,10 +43,6 @@ $(function() {
         "ui-droppable-hover": "album-hovered"
       },
       drop: function( event, ui ) {
-        location.reload(true);
-
-        // Continue the quiz
-        // alert($(this).attr("value"));
         continue_quiz($(this).attr("value"));
       }
     });
@@ -65,6 +64,42 @@ $(function() {
         localStorage.setItem('size', size);
         make_quiz(size);
     });
+
+    // Refresh the random title
+
+    if(localStorage.getItem('quizzes') != null) {
+        quizzes = localStorage.getItem("quizzes");
+        quizzes = JSON.parse(quizzes);
+        bg_ran = localStorage.getItem("bg_ran");
+        size = localStorage.getItem("size");
+        quiz_num = localStorage.getItem("quiz_num");
+
+        // window.localStorage.clear();
+        // alert("quizzes: "+quizzes[quiz_num].title+" / stage: "+quiz_num+" / size: "+size+" / album: "+quizzes[quiz_num].album);
+        
+        // alert("quiz_num: "+quiz_num+"/ size: "+size);
+        // size = localStorage.getItem("size");
+        // quiz_num = localStorage.getItem("quiz_num");
+
+        if(quiz_num <= size) {
+          // alert("제목 가져오는 중...");
+
+          $("#randomTitle").text(quizzes[quiz_num-1].title);
+          $("#randomTitle").animate({ top: 0, left: 0 }, 0);
+        }
+        
+        if(bg_ran == 0) {
+          $(".background").css("background-image","url('resources/img/background_r.jpg')");
+        }
+        else if(bg_ran == 1){
+            $(".background").css("background-image","url('resources/img/background_y.jpg')");
+        }
+        else if(bg_ran == 2){
+            $(".background").css("background-image","url('resources/img/background_b.jpg')");
+        }
+
+        $("#progress").text(quiz_num+"/"+size);
+    };
 
 
     // Show result

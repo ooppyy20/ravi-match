@@ -180,11 +180,15 @@ a:hover {
   }
 
 #albums {
-    margin: 0 auto; padding: 100px 0;
-    /* position: relative; */
+    margin: 0 auto; padding: 0 0;
     display: block;
+    position: absolute; 
+    top: 330px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    top: 110px;
     height: fit-content;
 }
 
