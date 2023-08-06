@@ -15,7 +15,7 @@ $(function() {
       var bg_ran = Math.floor(Math.random() * 3);
       localStorage.setItem('bg_ran', bg_ran);
     }
-    
+
     if(localStorage.getItem('bg_ran') == 0) {
       $(".background").css("background-image","url('resources/img/background_r.jpg')");
     }
@@ -52,14 +52,14 @@ $(function() {
 
     // Select a mode
     $("#mode1").click(function(){
-      size = 30;
+      size = 10;
       localStorage.setItem('mode', 1);
       localStorage.setItem('size', size);
       make_quiz(size);
     });
 
     $("#mode2").click(function(){
-        size = 5;
+        size = 7;
         localStorage.setItem('mode', 2);
         localStorage.setItem('size', size);
         make_quiz(size);
@@ -98,7 +98,8 @@ $(function() {
             $(".background").css("background-image","url('resources/img/background_b.jpg')");
         }
 
-        $("#progress").text(quiz_num+"/"+size);
+        if(quiz_num <= size)
+          $("#progress").text(quiz_num+"/"+size);
     };
 
 

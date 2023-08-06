@@ -53,7 +53,8 @@ function continue_quiz(album_code) {
           $(".background").css("background-image","url('resources/img/background_b.jpg')");
       }
 
-    $("#progress").text(quiz_num+"/"+size);
+    if(quiz_num <= size)
+        $("#progress").text(quiz_num+"/"+size);
 
     // Finished the quizzes
     if(quiz_num > size){
