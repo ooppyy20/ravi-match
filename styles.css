@@ -72,10 +72,10 @@ body::-webkit-scrollbar {
 
 #gameTitle {
     color: #e0d9de;
-    font-size: 80px;
+    font-size: 110px;
     text-align: center;
     padding-top: 20vw;
-    margin-bottom: 4vw;
+    margin-bottom: 18vw;
     text-shadow: 4px 4px 6px rgb(0, 0, 0);
     letter-spacing: -6px;
     word-spacing: 10px;
@@ -93,14 +93,14 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
 
-    margin: 8px 6vw;
+    margin: 40px 6vw;
     padding: 0 10px;
 
     background-color: #000000;
 
     text-decoration: none;
     text-align: center;
-    font-size: 90px;
+    font-size: 80px;
     white-space: nowrap; 
     color: rgba(255, 255, 255, 0.781);
 }
@@ -116,21 +116,26 @@ a:hover {
 /* quiz.html */
 
 #titleBox {
-    margin: 0 0; padding: 0 0;
+    margin: 70px 0 0 0; padding: 0 0;
     position: relative;
     margin-bottom: 40px;
 
     text-align: center;
 
     z-index: 999;
+
+    width: 86%;
+    padding: 0 7%;
     
     animation: bounce 1.5s infinite;
+
+
 }
 
 #titleBox p {
     margin: 8px 0; padding: 30px 0 0 0;
     color: #fff;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 #randomTitle {
@@ -139,11 +144,11 @@ a:hover {
     padding: 2px 8px 2px 5px;
 
     background-color: #ffffff;
-    font-size: 70px;
+    font-size: 48px;
 }
 
 #randomTitle::before {
-    font-size: 44px;
+    font-size: 43px;
     content: "🎵 ";
 }
 
@@ -184,7 +189,7 @@ a:hover {
     margin: 0 auto; padding: 0 0;
     display: block;
     position: absolute; 
-    top: 430px;
+    top: 500px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -213,16 +218,21 @@ a:hover {
     right: 3vw;
     text-align: center;
     color: #fff;
-    font-size: 14vw;
+    font-size: 120px;
 }
 
 /* score page */
+
+#scoreBox {
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
 
 #score {
     display: block;
 
     color: #ffffff;
-    font-size: 130px;
+    font-size: 210px;
     text-align: center;
     padding-top: 80px;
     margin-top: 0;
@@ -241,7 +251,7 @@ a:hover {
     flex-wrap: wrap;
     margin: 0 10%;
 
-    max-height: 900px;
+    max-height: 600px;
 }
 
 .resultBox {
@@ -256,21 +266,20 @@ a:hover {
 }
 
 .resultBox img {
-    margin: 6px 3px 6px 11.5px;
+    margin: 6px 3px 6px 13px;
     display: block;
-    width: 1vw;
-    min-width: 20px;
+    width: 5vw;
 }
 
 .resultBox h2 {
     margin: auto 17px auto 5px;
     display: block;
-    font-size: 18px;
+    font-size: 30px;
     /* white-space: nowrap;  */
 }
 
 .resultBox h2::before {
-    font-size: 10px;
+    font-size: 23px;
     content: "🎵 ";
 }
 
@@ -283,11 +292,15 @@ a:hover {
 /* TimeAttack Score Page */
 
 #time {
+    display: block;
+
     color: #ffffff;
-    font-size: 17vw;
+    font-size: 240px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 80px;
+    margin-top: 0;
     margin-bottom: 20px;
+    padding-right: 6vw;
     letter-spacing: -6px;
     word-spacing: 10px;
 }
@@ -295,7 +308,7 @@ a:hover {
 #time:after {
     content: "sec";
     color: #ffffff;
-    font-size: 10vw;
+    font-size: 90px;
     letter-spacing: -6px;
     word-spacing: 10px;
 }
