@@ -74,8 +74,8 @@ body::-webkit-scrollbar {
     color: #e0d9de;
     font-size: 110px;
     text-align: center;
-    padding-top: 20vw;
-    margin-bottom: 18vw;
+    padding-top: 530px;
+    margin-bottom: 90px;
     text-shadow: 4px 4px 6px rgb(0, 0, 0);
     letter-spacing: -6px;
     word-spacing: 10px;
@@ -93,8 +93,8 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
 
-    margin: 40px 6vw;
-    padding: 0 10px;
+    margin: 30px 6vw;
+    padding: 0 20px;
 
     background-color: #000000;
 
@@ -116,7 +116,7 @@ a:hover {
 /* quiz.html */
 
 #titleBox {
-    margin: 70px 0 0 0; padding: 0 0;
+    margin: 130px 0 0 0; padding: 0 0;
     position: relative;
     margin-bottom: 40px;
 
@@ -189,7 +189,7 @@ a:hover {
     margin: 0 auto; padding: 0 0;
     display: block;
     position: absolute; 
-    top: 500px;
+    top: 630px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -251,7 +251,7 @@ a:hover {
     flex-wrap: wrap;
     margin: 0 10%;
 
-    max-height: 600px;
+    max-height: 900px;
 }
 
 .resultBox {
