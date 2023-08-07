@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 .content {
     padding-top: 60px;
     padding-bottom: 100px;
-    height: auto;
+    height: 850px;
     width: 100%;
 }
 

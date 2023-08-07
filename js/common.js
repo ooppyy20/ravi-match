@@ -32,6 +32,7 @@ $(function() {
       scroll : false,
       cursor: "move",
       revert: "invalid",
+      containment: ".content",
       drag: function() {
         $(this).css("width", "10px");
       },
