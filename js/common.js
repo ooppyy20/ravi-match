@@ -12,7 +12,7 @@ $(function() {
 
   // Background image load
     if(localStorage.getItem('bg_ran') == null){
-      var bg_ran = Math.floor(Math.random() * 3);
+      var bg_ran = Math.floor(Math.random() * 4);
       localStorage.setItem('bg_ran', bg_ran);
     }
 
@@ -24,6 +24,9 @@ $(function() {
     }
     else if(localStorage.getItem('bg_ran') == 2){
         $(".background").css("background-image","url('resources/img/background_b.jpg')");
+    }
+    else if(localStorage.getItem('bg_ran') == 3){
+        $(".background").css("background-image","url('resources/img/background_w.jpg')");
     }
 
     // Things

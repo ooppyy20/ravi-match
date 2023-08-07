@@ -43,13 +43,16 @@ function continue_quiz(album_code) {
 
         if(bg_ran == 0) {
             $(".background").css("background-image","url('resources/img/background_r.jpg')");
-            }
-            else if(bg_ran == 1){
-                $(".background").css("background-image","url('resources/img/background_y.jpg')");
-            }
-            else if(bg_ran == 2){
-                $(".background").css("background-image","url('resources/img/background_b.jpg')");
-            }
+        }
+        else if(bg_ran == 1){
+            $(".background").css("background-image","url('resources/img/background_y.jpg')");
+        }
+        else if(bg_ran == 2){
+            $(".background").css("background-image","url('resources/img/background_b.jpg')");
+        }
+        else if(bg_ran == 3){
+            $(".background").css("background-image","url('resources/img/background_w.jpg')");
+        }
 
         if(quiz_num <= size)  
             $("#progress").text(quiz_num+"/"+size);
