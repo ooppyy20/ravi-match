@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
 
 #gameTitle {
     color: #e0d9de;
-    font-size: 120px;
+    font-size: 80px;
     text-align: center;
     padding-top: 20vw;
     margin-bottom: 4vw;
@@ -100,7 +100,7 @@ body::-webkit-scrollbar {
 
     text-decoration: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 90px;
     white-space: nowrap; 
     color: rgba(255, 255, 255, 0.781);
 }
@@ -130,6 +130,7 @@ a:hover {
 #titleBox p {
     margin: 8px 0; padding: 30px 0 0 0;
     color: #fff;
+    font-size: 60px;
 }
 
 #randomTitle {
@@ -138,11 +139,11 @@ a:hover {
     padding: 2px 8px 2px 5px;
 
     background-color: #ffffff;
-    font-size: 30px;
+    font-size: 70px;
 }
 
 #randomTitle::before {
-    font-size: 23px;
+    font-size: 44px;
     content: "🎵 ";
 }
 
@@ -183,7 +184,7 @@ a:hover {
     margin: 0 auto; padding: 0 0;
     display: block;
     position: absolute; 
-    top: 330px;
+    top: 430px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -194,8 +195,8 @@ a:hover {
 
 .album {
     margin: 7px;
-    width:13vw;
-    max-width: 100px;
+    width: 21vw;
+    max-width: 170px;
     min-width: 60px;
 
     transition: all 0.2s linear;
@@ -212,287 +213,65 @@ a:hover {
     right: 3vw;
     text-align: center;
     color: #fff;
-    font-size: 5vw;
+    font-size: 14vw;
 }
 
 /* score page */
 
-@media (max-width: 767px) {
-    #gameTitle {
-        color: #e0d9de;
-        font-size: 80px;
-        text-align: center;
-        padding-top: 20vw;
-        margin-bottom: 4vw;
-        text-shadow: 4px 4px 6px rgb(0, 0, 0);
-        letter-spacing: -6px;
-        word-spacing: 10px;
-    }
+#score {
+    display: block;
 
-    .menuContainer a {
-        display: flex;
-        justify-content: center;
-    
-        margin: 8px 6vw;
-        padding: 0 10px;
-    
-        background-color: #000000;
-    
-        text-decoration: none;
-        text-align: center;
-        font-size: 60px;
-        white-space: nowrap; 
-        color: rgba(255, 255, 255, 0.781);
-    }
-
-    #titleBox p {
-        margin: 8px 0; padding: 30px 0 0 0;
-        color: #fff;
-        font-size: 40px;
-    }
-
-    #randomTitle {
-        display: inline;
-        width: fit-content;
-        padding: 2px 8px 2px 5px;
-    
-        background-color: #ffffff;
-        font-size: 50px;
-    }
-    
-    #randomTitle::before {
-        font-size: 44px;
-        content: "🎵 ";
-    }
-
-    
-    #albums {
-        margin: 0 auto; padding: 0 0;
-        display: block;
-        position: absolute; 
-        top: 430px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: fit-content;
-    }
-
-    .album {
-        margin: 7px;
-        width: 18vw;
-        max-width: 130px;
-        min-width: 60px;
-
-        transition: all 0.2s linear;
-    }
-
-    #progress {
-        margin: 0 0; padding: 0 0;
-        position: absolute;
-        bottom: 130px;
-        right: 3vw;
-        text-align: center;
-        color: #fff;
-        font-size: 10vw;
-    }
-
-
-    #score {
-        display: block;
-    
-        color: #ffffff;
-        font-size: 130px;
-        text-align: center;
-        padding-top: 80px;
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding-right: 6vw;
-        letter-spacing: -6px;
-        word-spacing: 10px;
-    }
-
-    .results {
-        overflow-y: scroll;
-        -ms-overflow-style: none;
-    
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 10%;
-
-        max-height: 500px;
-    }
-
-    .resultBox {
-        display: flex;
-        justify-content: center;
-    
-        width: fit-content;
-        margin: 8px 10px;
-        padding: 0 0 ;
-    
-        background-color: #fff;
-    }
-
-    .resultBox img {
-        margin: 6px 3px 6px 11.5px;
-        display: block;
-        width: 1vw;
-        min-width: 20px;
-    }
-    
-    .resultBox h2 {
-        margin: auto 17px auto 5px;
-        display: block;
-        font-size: 18px;
-        /* white-space: nowrap;  */
-    }
-    
-    .resultBox h2::before {
-        font-size: 10px;
-        content: "🎵 ";
-    }
+    color: #ffffff;
+    font-size: 130px;
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-right: 6vw;
+    letter-spacing: -6px;
+    word-spacing: 10px;
 }
 
-@media (min-width: 1200px) {
-    #gameTitle {
-        color: #e0d9de;
-        font-size: 80px;
-        text-align: center;
-        padding-top: 20vw;
-        margin-bottom: 4vw;
-        text-shadow: 4px 4px 6px rgb(0, 0, 0);
-        letter-spacing: -6px;
-        word-spacing: 10px;
-    }
+.results {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
 
-    .menuContainer a {
-        display: flex;
-        justify-content: center;
-    
-        margin: 8px 6vw;
-        padding: 0 10px;
-    
-        background-color: #000000;
-    
-        text-decoration: none;
-        text-align: center;
-        font-size: 60px;
-        white-space: nowrap; 
-        color: rgba(255, 255, 255, 0.781);
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
 
-    #titleBox p {
-        margin: 8px 0; padding: 30px 0 0 0;
-        color: #fff;
-        font-size: 40px;
-    }
+    max-height: 900px;
+}
 
-    #randomTitle {
-        display: inline;
-        width: fit-content;
-        padding: 2px 8px 2px 5px;
-    
-        background-color: #ffffff;
-        font-size: 50px;
-    }
-    
-    #randomTitle::before {
-        font-size: 44px;
-        content: "🎵 ";
-    }
+.resultBox {
+    display: flex;
+    justify-content: center;
 
-    
-    #albums {
-        margin: 0 auto; padding: 0 0;
-        display: block;
-        position: absolute; 
-        top: 430px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: fit-content;
-    }
+    width: fit-content;
+    margin: 8px 10px;
+    padding: 0 0 ;
 
-    .album {
-        margin: 7px;
-        width: 18vw;
-        max-width: 130px;
-        min-width: 60px;
+    background-color: #fff;
+}
 
-        transition: all 0.2s linear;
-    }
+.resultBox img {
+    margin: 6px 3px 6px 11.5px;
+    display: block;
+    width: 1vw;
+    min-width: 20px;
+}
 
-    #progress {
-        margin: 0 0; padding: 0 0;
-        position: absolute;
-        bottom: 130px;
-        right: 3vw;
-        text-align: center;
-        color: #fff;
-        font-size: 10vw;
-    }
+.resultBox h2 {
+    margin: auto 17px auto 5px;
+    display: block;
+    font-size: 18px;
+    /* white-space: nowrap;  */
+}
 
-
-    #score {
-        display: block;
-    
-        color: #ffffff;
-        font-size: 130px;
-        text-align: center;
-        padding-top: 80px;
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding-right: 6vw;
-        letter-spacing: -6px;
-        word-spacing: 10px;
-    }
-
-    .results {
-        overflow-y: scroll;
-        -ms-overflow-style: none;
-    
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 10%;
-
-        max-height: 500px;
-    }
-
-    .resultBox {
-        display: flex;
-        justify-content: center;
-    
-        width: fit-content;
-        margin: 8px 10px;
-        padding: 0 0 ;
-    
-        background-color: #fff;
-    }
-
-    .resultBox img {
-        margin: 6px 3px 6px 11.5px;
-        display: block;
-        width: 1vw;
-        min-width: 20px;
-    }
-    
-    .resultBox h2 {
-        margin: auto 17px auto 5px;
-        display: block;
-        font-size: 18px;
-        /* white-space: nowrap;  */
-    }
-    
-    .resultBox h2::before {
-        font-size: 10px;
-        content: "🎵 ";
-    }
+.resultBox h2::before {
+    font-size: 10px;
+    content: "🎵 ";
 }
 
 .results::-webkit-scrollbar {
