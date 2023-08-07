@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 .content {
     padding-top: 60px;
     padding-bottom: 100px;
-    height: 850px;
+    height: 2000px;
     width: 100%;
 }
 
@@ -217,7 +217,7 @@ a:hover {
 
 /* score page */
 
-@media all and (max-width:900px) {
+@media (max-width: 767px) {
     #gameTitle {
         color: #e0d9de;
         font-size: 80px;
@@ -229,11 +229,81 @@ a:hover {
         word-spacing: 10px;
     }
 
+    .menuContainer a {
+        display: flex;
+        justify-content: center;
+    
+        margin: 8px 6vw;
+        padding: 0 10px;
+    
+        background-color: #000000;
+    
+        text-decoration: none;
+        text-align: center;
+        font-size: 60px;
+        white-space: nowrap; 
+        color: rgba(255, 255, 255, 0.781);
+    }
+
+    #titleBox p {
+        margin: 8px 0; padding: 30px 0 0 0;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    #randomTitle {
+        display: inline;
+        width: fit-content;
+        padding: 2px 8px 2px 5px;
+    
+        background-color: #ffffff;
+        font-size: 50px;
+    }
+    
+    #randomTitle::before {
+        font-size: 44px;
+        content: "🎵 ";
+    }
+
+    
+    #albums {
+        margin: 0 auto; padding: 0 0;
+        display: block;
+        position: absolute; 
+        top: 430px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .album {
+        margin: 7px;
+        width: 18vw;
+        max-width: 130px;
+        min-width: 60px;
+
+        transition: all 0.2s linear;
+    }
+
+    #progress {
+        margin: 0 0; padding: 0 0;
+        position: absolute;
+        bottom: 130px;
+        right: 3vw;
+        text-align: center;
+        color: #fff;
+        font-size: 10vw;
+    }
+
+
     #score {
         display: block;
     
         color: #ffffff;
-        font-size: 100px;
+        font-size: 130px;
         text-align: center;
         padding-top: 80px;
         margin-top: 0;
@@ -286,7 +356,7 @@ a:hover {
     }
 }
 
-@media all and (max-width:14000px) {
+@media (min-width: 1200px) {
     #score {
         display: block;
     
