@@ -36,17 +36,18 @@ body::-webkit-scrollbar {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 170px;
     background-color: #000;
     z-index: 10;
 }
 
 #GameName {
+    margin: 0; padding: 0;
     position: absolute;
-    top: 7px;
-    left: 6vw;
+    top: 35px;
+    left: 4.5vw;
     color: #fff;
-    font-size: 30px;
+    font-size: 50px;
     z-index: 9999;
 }
 
@@ -55,7 +56,7 @@ body::-webkit-scrollbar {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #000;
     z-index: 10;
 }
@@ -74,7 +75,7 @@ body::-webkit-scrollbar {
     color: #e0d9de;
     font-size: 110px;
     text-align: center;
-    padding-top: 530px;
+    padding-top: 520px;
     margin-bottom: 90px;
     text-shadow: 4px 4px 6px rgb(0, 0, 0);
     letter-spacing: -6px;
@@ -111,7 +112,16 @@ a:hover {
     transform: scale(1.05);
 }
 
-
+#signature {
+    color: #2c2b2b;
+    padding: 0;
+    margin-top: 48px;
+    margin-left: 80%;
+    font-size: 37px;
+    /* margin-top: 520px; */
+    /* text-shadow: 4px 4px 6px rgb(0, 0, 0); */
+    letter-spacing: -2px;
+}
 
 /* quiz.html */
 
@@ -127,7 +137,7 @@ a:hover {
     width: 86%;
     padding: 0 7%;
     
-    animation: bounce 1.5s infinite;
+    animation: bounce 1.2s infinite;
 
 
 }
@@ -173,11 +183,11 @@ a:hover {
     }
 
     50% {
-        top: 105px;
+        top: 115px;
     }
 
     70% {
-        top: 105px;
+        top: 115px;
     }
 
     100% {
@@ -268,11 +278,13 @@ a:hover {
 .resultBox img {
     margin: 6px 3px 6px 13px;
     display: block;
-    width: 5vw;
+    height: 5vw;
+    /* width: 5vw; */
 }
 
 .resultBox h2 {
     margin: auto 17px auto 5px;
+    padding: 5px 0;
     display: block;
     font-size: 30px;
     /* white-space: nowrap;  */
