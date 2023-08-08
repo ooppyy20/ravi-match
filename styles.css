@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
 #GameName {
     margin: 0; padding: 0;
     position: absolute;
-    top: 47px;
+    top: 49px;
     left: 4.5vw;
     color: #fff;
     font-size: 50px;
@@ -199,7 +199,7 @@ a:hover {
     margin: 0 auto; padding: 0 0;
     display: block;
     position: absolute; 
-    top: 710px;
+    top: 690px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -228,7 +228,7 @@ a:hover {
     right: 3vw;
     text-align: center;
     color: #fff;
-    font-size: 120px;
+    font-size: 100px;
 }
 
 /* score page */
