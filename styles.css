@@ -1,5 +1,5 @@
 /* 태블릿 가로 이상 */
-@media all and (min-width:768px) { 
+@media all and (max-height:1499px) { 
     /* Settings */
 
     body {
@@ -302,3 +302,340 @@
         word-spacing: 10px;
     }
 }
+
+
+/* --------------------------------------------------------- */ 
+
+
+/* 모바일 가로 이하 */ 
+@media all and (min-height:1500px) {
+        
+    /* Settings */
+
+    body {
+        overflow: hidden;
+        -ms-overflow-style: none;
+        width: 100%; height: 100%;
+        font-family: 'Song Myung';
+        margin: 0px; border: 0px; padding: 0px;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .background {
+        background-color: #000;
+        background-image: url("resources/img/background_r.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 0;
+        
+
+        position: absolute;
+        top: 80px;
+        bottom: -1000px;
+        right: 0;
+        left: -20px;
+        z-index: -1;
+
+        filter: blur(2px);
+    }
+
+    #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 170px;
+        background-color: #000;
+        z-index: 10;
+    }
+
+    #GameName {
+        margin: 0; padding: 0;
+        position: absolute;
+        top: 49px;
+        left: 4.5vw;
+        color: #fff;
+        font-size: 50px;
+        z-index: 9999;
+    }
+
+    #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 170px;
+        background-color: #000;
+        z-index: 10;
+    }
+
+    .content {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        height: 2000px;
+        width: 100%;
+    }
+
+
+    /* index.html */
+
+    #gameTitle {
+        color: #e0d9de;
+        font-size: 110px;
+        text-align: center;
+        padding-top: 520px;
+        margin-bottom: 90px;
+        text-shadow: 4px 4px 6px rgb(0, 0, 0);
+        letter-spacing: -6px;
+        word-spacing: 10px;
+    }
+
+    .menuContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        z-index : 800;
+    }
+
+    .menuContainer a {
+        display: flex;
+        justify-content: center;
+
+        margin: 30px 6vw;
+        padding: 0 20px;
+
+        background-color: #000000;
+
+        text-decoration: none;
+        text-align: center;
+        font-size: 80px;
+        white-space: nowrap; 
+        color: rgba(255, 255, 255, 0.781);
+    }
+
+    a:hover {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        transform: scale(1.05);
+    }
+
+    #signature {
+        color: #2c2b2b;
+        padding: 0;
+        margin-top: 53px;
+        margin-left: 73%;
+        font-size: 37px;
+        /* margin-top: 520px; */
+        /* text-shadow: 4px 4px 6px rgb(0, 0, 0); */
+        letter-spacing: -2px;
+    }
+
+    /* quiz.html */
+
+    #titleBox {
+        margin: 190px 0 0 0; padding: 0 0;
+        position: relative;
+        margin-bottom: 40px;
+
+        text-align: center;
+
+        z-index: 999;
+
+        width: 86%;
+        padding: 0 7%;
+        
+        animation: bounce 1.2s infinite;
+
+
+    }
+
+    #titleBox p {
+        margin: 8px 0; padding: 30px 0 0 0;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    #randomTitle {
+        display: inline;
+        width: fit-content;
+        padding: 2px 8px 2px 5px;
+
+        background-color: #ffffff;
+        font-size: 48px;
+    }
+
+    #randomTitle::before {
+        font-size: 43px;
+        content: "🎵 ";
+    }
+
+    #randomTitle:hover {
+        background-color: #ccc6c6c7;
+        background-blend-mode: hard-light;
+    }
+
+    .randomTitle-dragged {
+        transform: scale(0.5);
+        background-color: #310808c7;
+    }
+
+    .ui-draggable-dragging{
+        transform: scale(0.5);
+        background-color: #310808c7;
+    }
+
+    @keyframes bounce {
+        0% {
+            top: 100px;
+        }
+
+        50% {
+            top: 115px;
+        }
+
+        70% {
+            top: 115px;
+        }
+
+        100% {
+            top: 100px;
+        }
+    }
+
+    #albums {
+        margin: 0 auto; padding: 0 0;
+        display: block;
+        position: absolute; 
+        top: 690px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .album {
+        margin: 7px;
+        width: 21vw;
+        max-width: 170px;
+        min-width: 60px;
+
+        transition: all 0.2s linear;
+    }
+
+    .album-hovered {
+        transform: scale(1.2);
+    }
+
+    #progress {
+        margin: 0 0; padding: 0 0;
+        position: absolute;
+        bottom: 150px;
+        right: 3vw;
+        text-align: center;
+        color: #fff;
+        font-size: 100px;
+    }
+
+    /* score page */
+
+    #scoreBox {
+        margin-top: 180px;
+        margin-bottom: 80px;
+    }
+
+    #score {
+        display: block;
+
+        color: #ffffff;
+        font-size: 210px;
+        text-align: center;
+        padding-top: 80px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-right: 6vw;
+        letter-spacing: -6px;
+        word-spacing: 10px;
+    }
+
+    .results {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 10%;
+
+        max-height: 900px;
+    }
+
+    .resultBox {
+        display: flex;
+        justify-content: center;
+
+        width: fit-content;
+        margin: 8px 10px;
+        padding: 0 0 ;
+
+        background-color: #fff;
+    }
+
+    .resultBox img {
+        margin: 6px 3px 6px 13px;
+        display: block;
+        height: 5vw;
+        /* width: 5vw; */
+    }
+
+    .resultBox h2 {
+        margin: auto 17px auto 5px;
+        padding: 5px 0;
+        display: block;
+        font-size: 30px;
+        /* white-space: nowrap;  */
+    }
+
+    .resultBox h2::before {
+        font-size: 23px;
+        content: "🎵 ";
+    }
+
+    .results::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    /* TimeAttack Score Page */
+
+    #time {
+        display: block;
+
+        color: #ffffff;
+        font-size: 240px;
+        text-align: center;
+        padding-top: 80px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-right: 6vw;
+        letter-spacing: -6px;
+        word-spacing: 10px;
+    }
+
+    #time:after {
+        content: "sec";
+        color: #ffffff;
+        font-size: 90px;
+        letter-spacing: -6px;
+        word-spacing: 10px;
+    }
+}
+
+
